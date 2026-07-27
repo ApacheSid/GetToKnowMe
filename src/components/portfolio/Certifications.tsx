@@ -9,7 +9,8 @@ export function Certifications() {
       eyebrow="Certifications"
       title={
         <>
-          Verified <span className="gradient-text">cloud credentials</span>
+          Certifications &amp; <span className="gradient-text">training</span>
+
         </>
       }
       description="Professional certifications and technical trainings completed."
