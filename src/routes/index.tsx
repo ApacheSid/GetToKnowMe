@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: profile.name,
-          jobTitle: "Senior Full Stack .NET Developer",
+          jobTitle: "Team Lead / Lead Software Developer",
           description,
           email: `mailto:${profile.email}`,
           address: { "@type": "PostalAddress", addressLocality: profile.location },
