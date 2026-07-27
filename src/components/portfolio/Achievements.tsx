@@ -5,7 +5,7 @@ import { Reveal } from "./Section";
 
 function Counter({ value, suffix }: { value: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement | null>(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, amount: 0.3 });
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
