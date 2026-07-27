@@ -2,98 +2,144 @@
  * ============================================================================
  * PORTFOLIO CONTENT — SINGLE SOURCE OF TRUTH
  * ----------------------------------------------------------------------------
- * Everything on the site reads from this file. To personalize the portfolio,
- * replace the placeholder values below with details from your resume.
- * No component edits are required for content changes.
+ * Every section of the site reads from this file. Content is sourced from
+ * Siddhartha Sharma's resume — no component edits are needed to update copy.
  * ============================================================================
  */
 
+import resumeAsset from "@/assets/resume.pdf.asset.json";
+
 export const profile = {
-  // TODO: Replace with your full name as it appears on your resume.
-  name: "Alexander Grant",
-  // Professional headline shown under the name in the hero.
+  name: "Siddhartha Sharma",
   headline:
-    "Senior Full Stack .NET Developer | Azure Cloud | Angular | Microservices",
-  // Short elevator pitch (2–3 lines max).
+    "Team Lead & Lead Software Developer | Full Stack .NET | Azure | Angular | Microservices",
   summary:
-    "I design and ship enterprise-grade systems on .NET and Azure — modernizing legacy platforms, breaking monoliths into resilient microservices, and delivering software that measurably moves the business.",
-  location: "Toronto, Ontario, Canada", // TODO: your city
-  email: "hello@example.com", // TODO: your email
-  github: "https://github.com/your-handle", // TODO: your GitHub
-  linkedin: "https://linkedin.com/in/your-handle", // TODO: your LinkedIn
-  // Place your PDF in /public and point this at it, e.g. "/resume.pdf".
-  resumeUrl: "/resume.pdf",
+    "Lead developer with 12+ years architecting scalable enterprise systems, leading cloud transformations on Azure, and modernizing legacy platforms into cloud-native .NET Core microservices with Angular front ends.",
+  location: "Canada",
+  email: "siddhartha.sharma0501@gmail.com",
+  phone: "+1-905-601-2425",
+  github: "https://github.com/apachesid",
+  linkedin: "https://www.linkedin.com/in/siddharthasharma05",
+  resumeUrl: resumeAsset.url,
 };
 
-/** Typing effect rotation in the hero. TODO: adjust to your specialties. */
+/** Typing effect rotation in the hero. */
 export const typingPhrases = [
-  "Senior Full Stack .NET Developer",
-  "Azure Cloud Engineer",
-  "Microservices Architect",
-  "Angular & TypeScript Developer",
+  "Lead Software Developer",
+  "Full Stack .NET Developer",
+  "Azure Cloud & Microservices",
+  "Angular & TypeScript Engineer",
+  "Legacy Modernization Lead",
 ];
 
-/** About section paragraphs. TODO: rewrite in your own voice. */
 export const about = {
   paragraphs: [
-    "With 11+ years building software for regulated, high-volume enterprises, I specialize in the backend: domain modelling, API design, data access, and the unglamorous performance work that keeps mission-critical systems fast under load.",
-    "My recent work centers on cloud-native .NET — App Services, Azure Functions, API Management and event-driven messaging — paired with Angular front ends that make complex workflows feel simple for the people who use them all day.",
-    "I care most about solving real business problems: cutting manual processing time, retiring brittle legacy code, and giving teams an architecture they can keep extending. I learn continuously, write things down, and mentor the engineers around me.",
+    "I'm a lead developer with 12+ years of experience architecting scalable systems, leading cloud transformations, and delivering end-to-end platform and full-stack solutions. I align technical strategy with business objectives, drive enterprise-wide engineering improvements, and influence senior stakeholders on architectural and technology decisions.",
+    "My strength is designing and optimizing high-performance, scalable platforms that improve developer productivity, enhance system reliability, and reduce operational cost — across Azure, .NET, Angular, CI/CD, and relational databases. I've led cloud cost optimization efforts and owned full-cycle delivery from requirements through production support.",
+    "Alongside hands-on engineering, I lead a globally distributed team of 7 across development, QA, and support — running sprint planning, code reviews, and technical mentorship, and coordinating onshore stakeholders with offshore delivery across time zones.",
   ],
   highlights: [
-    "11+ years shipping enterprise software",
-    "Backend & distributed systems specialist",
-    "Azure cloud migration and cost optimization",
-    "Clean Architecture, SOLID, testable code",
+    "12+ years delivering enterprise software",
+    "Azure cloud transformation & cost optimization",
+    "Legacy API modernization to cloud-native microservices",
+    "Leads a distributed team of 7 (dev, QA, support)",
+    "Domains: Cyber Security, Insurance, Re-Insurance, Title Insurance, Finance",
   ],
 };
 
 export type SkillGroup = { category: string; skills: string[] };
 
-/** TODO: add/remove technologies to match your resume. */
 export const skillGroups: SkillGroup[] = [
   {
-    category: "Backend",
+    category: "Programming Languages",
+    skills: ["C#", "TypeScript", "JavaScript"],
+  },
+  {
+    category: "Web & Front-End",
     skills: [
-      "C#",
-      ".NET Framework",
-      ".NET Core",
-      "ASP.NET Core",
-      "REST APIs",
-      "Entity Framework",
-      "LINQ",
+      "Angular",
+      "ASP.NET MVC / Razor Pages",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "OIDC",
+      "JWT",
+      "OAuth 2.0",
     ],
   },
   {
-    category: "Frontend",
-    skills: ["Angular", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"],
+    category: "Back-End & Frameworks",
+    skills: [
+      ".NET",
+      ".NET Core",
+      "ASP.NET",
+      "Web API",
+      "Entity Framework Core",
+      "MVC",
+      "Microservices",
+      "REST",
+      "CQRS",
+    ],
   },
   {
-    category: "Cloud",
+    category: "Cloud, DevOps & CI/CD",
     skills: [
-      "Azure",
-      "App Service",
-      "Azure Functions",
-      "API Management",
+      "Microsoft Azure",
+      "Azure Container Apps",
+      "Containers",
+      "Blob Storage",
       "Key Vault",
       "Application Insights",
-      "Azure SQL",
-      "Storage Accounts",
+      "GitHub Actions",
+      "GitLab CI",
+      "Team Foundation Server",
     ],
   },
   {
-    category: "Architecture",
+    category: "Database",
+    skills: ["SQL Server", "T-SQL", "PostgreSQL", "MongoDB"],
+  },
+  {
+    category: "Testing, Security & Code Quality",
     skills: [
-      "Microservices",
-      "Clean Architecture",
-      "Dependency Injection",
-      "SOLID Principles",
-      "Design Patterns",
-      "Event Driven Architecture",
+      "Unit Testing",
+      "NUnit",
+      "MSTest",
+      "Swagger",
+      "SonarQube",
+      "Veracode",
+      "StackHawk",
+      "Snyk",
+      "PGP",
+      "SAST / DAST",
     ],
   },
-  { category: "Database", skills: ["SQL Server", "Stored Procedures"] },
-  { category: "DevOps", skills: ["Git", "Azure DevOps", "CI/CD"] },
+  {
+    category: "Development Tools",
+    skills: [
+      "Visual Studio",
+      "VS Code",
+      "GitHub",
+      "Postman",
+      "SoapUI",
+      "Mockoon",
+      "SSMS",
+      "Fiddler",
+    ],
+  },
+  {
+    category: "Enterprise & Legacy",
+    skills: [
+      "VB6",
+      "VB.NET",
+      "BizTalk",
+      "WCF",
+      "WPF",
+      "WinForms",
+      "jQuery",
+      "AJAX",
+    ],
+  },
 ];
 
 export type ExperienceItem = {
@@ -105,45 +151,75 @@ export type ExperienceItem = {
   stack: string[];
 };
 
-/**
- * TODO: replace these placeholder roles with your actual experience.
- * The timeline renders in the order listed (most recent first).
- */
 export const experience: ExperienceItem[] = [
   {
-    role: "Senior Full Stack .NET Developer",
-    company: "Enterprise Client — Financial Services",
-    period: "2021 — Present",
-    location: "Toronto, ON",
+    role: "Team Lead / Lead Software Developer",
+    company: "Infosys Limited",
+    period: "Jan 2023 — Present",
+    location: "Canada",
     points: [
-      "Lead backend architecture for a multi-tenant platform serving thousands of daily transactions.",
-      "Decomposed a monolith into independently deployable .NET microservices with event-driven messaging.",
-      "Introduced CI/CD pipelines in Azure DevOps, cutting release cycles from weeks to days.",
+      "Defined the technical roadmap for scalable, enterprise-grade applications integrated with Azure services and analytics, built on an Angular front end and .NET Core backend using REST, WCF, and microservices APIs.",
+      "Adopted Azure Container Apps to streamline deployment of existing services and scale microservices across the cluster, improving deployment flexibility and reliability.",
+      "Led strategic initiatives to modernize legacy APIs by migrating them to cloud-native microservices, significantly enhancing system reliability and reducing operational costs.",
+      "Instrumented systems with Azure Application Insights for sharper diagnostics and more reliable monitoring across services.",
+      "Drove development tool enhancements that improved API performance tuning by 30%, and influenced leadership to adopt AI-driven alert management — reducing alert fatigue and accelerating incident response.",
+      "Led a globally distributed offshore team of 7 (developers, QA, support), owning sprint planning, code reviews, and technical mentorship with quality gates via SAST, DAST, and SonarQube.",
+      "Coordinated cross-functional collaboration between onshore stakeholders and the offshore delivery team, aligning priorities, timelines, and technical decisions across time zones.",
+      "Delivered multiple web portals and partner integrations, advising on performance optimization, cost efficiency, and serverless best practices for cost-effective scale.",
     ],
-    stack: [".NET Core", "Azure", "Angular", "SQL Server"],
+    stack: [
+      "Angular",
+      ".NET Core",
+      "Azure Container Apps",
+      "Application Insights",
+      "Microservices",
+      "SQL Server",
+      "WCF",
+    ],
   },
   {
-    role: "Full Stack .NET Developer",
-    company: "Enterprise Client — Real Estate Technology",
-    period: "2017 — 2021",
-    location: "Toronto, ON",
+    role: "Technology Analyst",
+    company: "Infosys Limited",
+    period: "Jan 2020 — Dec 2022",
+    location: "Canada",
     points: [
-      "Built REST APIs and Angular interfaces for document-heavy title and property workflows.",
-      "Migrated on-premise workloads to Azure App Service and Azure SQL with zero downtime cutover.",
-      "Tuned SQL Server queries and stored procedures, reducing report generation time significantly.",
+      "Identified a broker-onboarding bottleneck in an insurance client's lender portals, designed a dedicated Broker Portal, and presented a working prototype and workflow analysis to stakeholders.",
+      "Acted as lead developer for that Broker Portal — Angular UI with .NET Core microservices — now live and improving broker onboarding efficiency and user experience.",
+      "Single-handedly built and delivered automated file transfer with PGP encryption, integrating it into the existing BizTalk application.",
+      "Managed the full project lifecycle including sprint planning, team leadership, and production deployments.",
+      "Enforced code quality and security through SonarQube and Veracode scans across releases.",
+      "Partnered with Product Owners to define requirements, design solutions, lead development and testing, and support UAT against business objectives.",
     ],
-    stack: ["ASP.NET Core", "Angular", "Azure SQL", "Entity Framework"],
+    stack: [
+      "Angular",
+      ".NET Core",
+      "Microservices",
+      "BizTalk",
+      "PGP",
+      "SonarQube",
+      "Veracode",
+    ],
   },
   {
-    role: ".NET Developer",
-    company: "Software Consultancy",
-    period: "2014 — 2017",
-    location: "Remote",
+    role: "Technology Analyst / Senior Software Engineer",
+    company: "Infosys Limited",
+    period: "Jul 2014 — Dec 2019",
+    location: "India",
     points: [
-      "Delivered line-of-business applications on .NET Framework for logistics and insurance clients.",
-      "Modernized legacy VB codebases into maintainable, layered C# solutions.",
+      "Led the offshore development team and partnered with client architects to design and document the target architecture.",
+      "Delivered multiple portals using .NET (WCF, WPF, Angular, Entity Framework) and managed SQL Server database objects.",
+      "Built a custom automation tool with ASP.NET MVC and SQL Server stored procedures to eliminate repetitive manual tasks; the client approved and adopted it, increasing team productivity by 30–35%.",
+      "Supported production through issue resolution and patch deployments.",
     ],
-    stack: ["C#", ".NET Framework", "JavaScript", "SQL Server"],
+    stack: [
+      ".NET",
+      "WCF",
+      "WPF",
+      "Angular",
+      "Entity Framework",
+      "ASP.NET MVC",
+      "SQL Server",
+    ],
   },
 ];
 
@@ -157,85 +233,88 @@ export type Project = {
   outcome: string;
 };
 
-/** TODO: swap in real project details, metrics and outcomes. */
 export const projects: Project[] = [
   {
-    title: "Legacy Modernization",
-    tagline: "VB/.NET → modern .NET",
+    title: "Legacy API Modernization",
+    tagline: "Monolithic APIs → cloud-native microservices",
     description:
-      "Incremental rewrite of a decade-old VB/.NET line-of-business suite into a modular .NET solution without pausing feature delivery.",
-    technologies: ["C#", ".NET Core", "Entity Framework", "SQL Server"],
+      "Led strategic initiatives to migrate legacy enterprise APIs to cloud-native microservices as part of an Azure transformation programme.",
+    technologies: [".NET Core", "Azure", "Microservices", "REST", "WCF"],
     architecture:
-      "Strangler-fig migration behind a routing façade; layered Clean Architecture with clear domain boundaries.",
+      "Microservices exposed over REST, deployed as containers and scaled across an Azure Container Apps cluster.",
     challenges:
-      "No test coverage, undocumented business rules, and a hard requirement of zero downtime for daily operations.",
+      "Migrating long-lived WCF and legacy service contracts without disrupting dependent enterprise consumers.",
     outcome:
-      "Legacy surface retired module by module with a maintainable codebase and dramatically lower defect rates.",
+      "Significantly improved system reliability and reduced operational costs.",
   },
   {
-    title: "Microservices Platform",
-    tagline: "Scalable independent services",
+    title: "Broker Portal",
+    tagline: "Insurance broker onboarding, reimagined",
     description:
-      "A suite of independently deployable services exposing versioned REST APIs behind a shared gateway.",
-    technologies: ["ASP.NET Core", "API Management", "Azure Functions"],
+      "Spotted a broker-onboarding bottleneck inside existing lender portals, proposed a dedicated portal, and led its delivery end to end after presenting a prototype and workflow analysis to the client.",
+    technologies: ["Angular", ".NET Core", "Microservices", "SQL Server"],
     architecture:
-      "Event-driven services with asynchronous messaging, per-service data ownership and centralized observability.",
+      "Angular single-page UI backed by .NET Core microservices with secure token-based authentication.",
     challenges:
-      "Distributed transactions, idempotency, and keeping contracts stable across independently shipping teams.",
+      "Replacing an entrenched manual onboarding workflow while integrating with existing lender portal systems.",
     outcome:
-      "Teams deploy on their own cadence; peak-load scaling handled per service rather than for the whole system.",
+      "Delivered and live in production, improving broker onboarding efficiency and user experience.",
   },
   {
-    title: "Azure Migration",
-    tagline: "On-premise → cloud",
+    title: "Enterprise Web Portals & Partner Integrations",
+    tagline: "Plug-in integrations for partner products",
     description:
-      "Lift-and-improve migration of enterprise workloads from on-premise servers to Azure.",
-    technologies: ["App Service", "Azure SQL", "Key Vault", "App Insights"],
+      "Designed and developed several web portals and integrations that plug seamlessly into partner company products to support broader business offerings.",
+    technologies: [
+      "Angular",
+      ".NET Core",
+      "SQL Server",
+      "Azure Container Apps",
+    ],
     architecture:
-      "Infrastructure-as-code deployments, managed identities for secretless access, and end-to-end telemetry.",
+      "Containerized services on Azure Container Apps with serverless-friendly patterns and analytics integration.",
     challenges:
-      "Hard-coded configuration, network-bound integrations and a strict maintenance window for cutover.",
+      "Balancing performance, cost efficiency, and scalability across integrations owned by multiple partners.",
     outcome:
-      "Elastic capacity, secrets consolidated in Key Vault, and reduced infrastructure operating cost.",
+      "Scalable, cost-effective deployments with greater flexibility and reliability.",
   },
   {
-    title: "Document Processing Platform",
-    tagline: "High-volume automation",
+    title: "Automated File Transfer & PGP Encryption",
+    tagline: "Secure automation inside BizTalk",
     description:
-      "Pipeline that ingests, classifies and extracts structured data from large volumes of business documents.",
-    technologies: ["Azure Functions", "Storage Accounts", "C#", "SQL Server"],
+      "Single-handedly created and delivered an automated, PGP-encrypted file transfer capability integrated with an existing BizTalk application.",
+    technologies: ["BizTalk", "PGP", ".NET", "SQL Server"],
     architecture:
-      "Queue-triggered serverless workers with retry and dead-letter handling; durable audit trail per document.",
+      "Scheduled, encrypted transfer pipeline plugged into existing BizTalk orchestrations.",
     challenges:
-      "Bursty ingestion volumes, inconsistent source formats and strict traceability requirements.",
+      "Adding strong encryption and automation to a legacy integration platform already running in production.",
     outcome:
-      "Manual review effort cut sharply while throughput scaled automatically with demand.",
+      "Manual, error-prone file handoffs replaced by a secure automated process.",
   },
   {
-    title: "Title Search Platform",
-    tagline: "Domain-heavy workflows",
+    title: "Productivity Automation Tool",
+    tagline: "30–35% team productivity gain",
     description:
-      "End-to-end platform supporting title search operations, from order intake through examination and delivery.",
-    technologies: ["Angular", "ASP.NET Core", "Entity Framework", "Azure"],
+      "Identified repetitive manual tasks in offshore delivery and built a custom automation tool, then pitched it to the client, who approved and adopted it.",
+    technologies: ["ASP.NET MVC", "SQL Server", "T-SQL"],
     architecture:
-      "Domain-driven services with role-based access control and a workflow engine for order state.",
+      "ASP.NET MVC application driving SQL Server stored procedures to automate recurring workflows.",
     challenges:
-      "Complex jurisdiction-specific rules and integrations with external registry data sources.",
-    outcome:
-      "One system replaced fragmented manual tooling, shortening turnaround time per order.",
+      "Making a bottom-up internal initiative credible enough for client-wide adoption.",
+    outcome: "Increased team productivity by 30–35% after adoption.",
   },
   {
-    title: "Property Search Service",
-    tagline: "Fast, resilient lookups",
+    title: "In-House Automation Tools & AI Agents",
+    tagline: "AI-assisted operational efficiency",
     description:
-      "Search service aggregating property data from multiple providers behind one resilient API.",
-    technologies: ["REST APIs", ".NET Core", "Azure SQL", "Caching"],
+      "Built in-house automation tools and AI agents that eliminated manual tasks across delivery and support workflows.",
+    technologies: ["Angular", ".NET Core", "N8N"],
     architecture:
-      "Provider abstraction with circuit breakers, response caching and normalized result contracts.",
+      "Agent-driven workflow automation orchestrated with N8N and custom .NET Core services behind an Angular console.",
     challenges:
-      "Unreliable upstream providers, varied schemas and demanding latency expectations.",
+      "Embedding AI-driven automation into established enterprise processes and gaining stakeholder trust.",
     outcome:
-      "Consistent sub-second responses with graceful degradation when a provider is unavailable.",
+      "Reduced operational effort and cost while improving delivery speed and client satisfaction.",
   },
 ];
 
@@ -246,35 +325,50 @@ export type Certification = {
   status: "earned" | "planned";
 };
 
-/** TODO: add your certifications and target dates. */
 export const certifications: Certification[] = [
   {
-    name: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    name: "Microsoft Certified Professional",
     issuer: "Microsoft",
-    year: "2023",
+    year: "",
     status: "earned",
   },
   {
-    name: "Azure Developer Associate (AZ-204)",
-    issuer: "Microsoft",
-    year: "Planned",
-    status: "planned",
+    name: "GitHub Copilot Certified",
+    issuer: "GitHub",
+    year: "",
+    status: "earned",
   },
   {
-    name: "Azure Solutions Architect Expert (AZ-305)",
-    issuer: "Microsoft",
-    year: "Planned",
-    status: "planned",
+    name: "Microservices & Event Driven Architecture",
+    issuer: "Training",
+    year: "",
+    status: "earned",
+  },
+  {
+    name: "Azure DevOps",
+    issuer: "Training",
+    year: "",
+    status: "earned",
   },
 ];
 
-/** TODO: update counters with your real numbers. */
 export const achievements = [
-  { label: "Years Experience", value: 11, suffix: "+" },
-  { label: "Projects Delivered", value: 40, suffix: "+" },
-  { label: "APIs Built", value: 120, suffix: "+" },
-  { label: "Enterprise Applications", value: 15, suffix: "+" },
+  { label: "Years Experience", value: 12, suffix: "+" },
+  { label: "API Performance Tuning Gain", value: 30, suffix: "%" },
+  { label: "Team Productivity Gain", value: 35, suffix: "%" },
+  { label: "Engineers Led", value: 7, suffix: "" },
 ];
+
+/** Education, awards and recognition — sourced directly from the resume. */
+export const recognition = {
+  education:
+    "Bachelor's Degree (First Class with Distinction), Hindustan University, India",
+  awards: [
+    "Insurance Hi-Flyer Award — Infosys Limited",
+    "INSTA Award — Infosys Limited",
+    "Multiple Appreciation Awards for quality and delivery excellence — Infosys Limited",
+  ],
+};
 
 export const navSections = [
   { id: "hero", label: "Home" },
