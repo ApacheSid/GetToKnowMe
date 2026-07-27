@@ -47,6 +47,33 @@ export function Certifications() {
           );
         })}
       </div>
+
+      <Reveal className="glass mt-6 grid gap-8 rounded-3xl p-6 sm:p-8 lg:grid-cols-2">
+        <div>
+          <h3 className="font-mono text-xs tracking-[0.16em] text-primary uppercase">
+            Education
+          </h3>
+          <p className="mt-3 text-sm text-muted-foreground">
+            {recognition.education}
+          </p>
+        </div>
+        <div>
+          <h3 className="font-mono text-xs tracking-[0.16em] text-primary uppercase">
+            Awards &amp; Recognition
+          </h3>
+          <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+            {recognition.awards.map((award) => (
+              <li key={award} className="flex gap-2">
+                <span className="text-primary" aria-hidden>
+                  &bull;
+                </span>
+                <span>{award}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Reveal>
     </Section>
+
   );
 }
