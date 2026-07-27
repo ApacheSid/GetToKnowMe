@@ -13,9 +13,10 @@ import { ScrollToTop } from "@/components/portfolio/ScrollToTop";
 import { Loader } from "@/components/portfolio/Loader";
 import { profile } from "@/content/portfolio";
 
-const title = `${profile.name} — Senior Full Stack .NET Developer`;
+const title = `${profile.name} — Lead Full Stack .NET & Azure Developer`;
 const description =
-  "Senior Full Stack .NET Developer with 11+ years in enterprise software: Azure cloud, ASP.NET Core microservices, Angular front ends and legacy modernization.";
+  "Lead software developer with 12+ years in enterprise .NET: Azure cloud transformation, .NET Core microservices, Angular front ends and legacy modernization.";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
