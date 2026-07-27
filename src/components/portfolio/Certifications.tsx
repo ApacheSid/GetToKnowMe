@@ -37,9 +37,12 @@ export function Certifications() {
                 {cert.name}
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">{cert.issuer}</p>
-              <p className="mt-4 font-mono text-xs tracking-[0.16em] text-primary uppercase">
-                {earned ? cert.year : "In progress"}
-              </p>
+              {(earned ? cert.year : "In progress") && (
+                <p className="mt-4 font-mono text-xs tracking-[0.16em] text-primary uppercase">
+                  {earned ? cert.year : "In progress"}
+                </p>
+              )}
+
             </Reveal>
           );
         })}
