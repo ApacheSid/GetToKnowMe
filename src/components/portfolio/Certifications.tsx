@@ -1,5 +1,5 @@
 import { FiAward, FiClock } from "react-icons/fi";
-import { certifications } from "@/content/portfolio";
+import { certifications, recognition } from "@/content/portfolio";
 import { Section, Reveal } from "./Section";
 
 export function Certifications() {
