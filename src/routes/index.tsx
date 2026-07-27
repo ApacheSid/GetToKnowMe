@@ -1,24 +1,68 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Experience } from "@/components/portfolio/Experience";
+import { Projects } from "@/components/portfolio/Projects";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { Achievements } from "@/components/portfolio/Achievements";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
+import { ScrollToTop } from "@/components/portfolio/ScrollToTop";
+import { Loader } from "@/components/portfolio/Loader";
+import { profile } from "@/content/portfolio";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = `${profile.name} — Senior Full Stack .NET Developer`;
+const description =
+  "Senior Full Stack .NET Developer with 11+ years in enterprise software: Azure cloud, ASP.NET Core microservices, Angular front ends and legacy modernization.";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "profile" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: profile.name,
+          jobTitle: "Senior Full Stack .NET Developer",
+          description,
+          email: `mailto:${profile.email}`,
+          address: { "@type": "PostalAddress", addressLocality: profile.location },
+          sameAs: [profile.github, profile.linkedin],
+        }),
+      },
+    ],
+  }),
+  component: Portfolio,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Portfolio() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen overflow-x-hidden">
+      <Loader />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Achievements />
+        <Experience />
+        <Projects />
+        <Certifications />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }
