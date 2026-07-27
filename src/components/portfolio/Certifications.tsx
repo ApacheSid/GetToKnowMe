@@ -12,7 +12,7 @@ export function Certifications() {
           Verified <span className="gradient-text">cloud credentials</span>
         </>
       }
-      description="Earned and in-progress certifications. Add new ones in src/content/portfolio.ts."
+      description="Professional certifications and technical trainings completed."
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {certifications.map((cert, i) => {
