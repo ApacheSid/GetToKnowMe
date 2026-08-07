@@ -38,7 +38,7 @@ export function Experience() {
                   >
                     <span
                       aria-hidden
-                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet"
+                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-caramel"
                     />
                     {p}
                   </li>

@@ -19,7 +19,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3.5 py-1.5 font-mono text-xs tracking-[0.16em] text-muted-foreground uppercase"
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-cyan" aria-hidden />
+          <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden />
           Available for senior engineering roles
         </motion.p>
 
