@@ -7,7 +7,7 @@
  * ============================================================================
  */
 
-import resumeAsset from "@/assets/resume.pdf.asset.json";
+// import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export const profile = {
   name: "Siddhartha Sharma",
@@ -20,7 +20,7 @@ export const profile = {
   phone: "+1-905-601-2425",
   github: "https://github.com/apachesid",
   linkedin: "https://www.linkedin.com/in/siddharthasharma05",
-  resumeUrl: resumeAsset.url,
+  resumeUrl: "/Siddhartha_Sharma_Resume.pdf",
 };
 
 /** Typing effect rotation in the hero. */
