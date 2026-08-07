@@ -76,25 +76,27 @@ export const skillGroups: SkillGroup[] = [
       ".NET Core",
       "ASP.NET",
       "Web API",
-      "Entity Framework Core",
-      "MVC",
+      "Microsoft BizTalk Server",
       "Microservices",
       "REST",
       "CQRS",
+      "Entity Framework Core",
+      "MVC",
     ],
   },
   {
     category: "Cloud, DevOps & CI/CD",
     skills: [
-      "Microsoft Azure",
+      "MS Azure",
+      "Azure App Services",
       "Azure Container Apps",
-      "Containers",
+      "Azure Functions",
       "Blob Storage",
       "Key Vault",
-      "Application Insights",
-      "GitHub Actions",
-      "GitLab CI",
-      "Team Foundation Server",
+      "Azure App Insights",
+      "Azure DevOps (CI/CD)",
+      "Docker",
+      "Kubernetes",
     ],
   },
   {
@@ -104,16 +106,17 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "Testing, Security & Code Quality",
     skills: [
-      "Unit Testing",
+      "OAuth",
+      "OIDC",
+      "JWT",
+      "APIM",
       "NUnit",
       "MSTest",
       "Swagger",
+      "Orchestration Debugger",
       "SonarQube",
       "Veracode",
-      "StackHawk",
-      "Snyk",
       "PGP",
-      "SAST / DAST",
     ],
   },
   {
@@ -121,12 +124,11 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       "Visual Studio",
       "VS Code",
+      "BizTalk Server Administrator",
       "GitHub",
       "Postman",
       "SoapUI",
-      "Mockoon",
       "SSMS",
-      "Fiddler",
     ],
   },
   {
@@ -141,6 +143,10 @@ export const skillGroups: SkillGroup[] = [
       "jQuery",
       "AJAX",
     ],
+  },
+  {
+    category: "Domain",
+    skills: ["Insurance", "Re-Insurance", "Title Insurance", "Banking"],
   },
 ];
 
@@ -160,22 +166,19 @@ export const experience: ExperienceItem[] = [
     period: "Jan 2023 — Present",
     location: "Canada",
     points: [
-      "Defined the technical roadmap for scalable, enterprise-grade applications integrated with Azure services and analytics, built on an Angular front end and .NET Core backend using REST, WCF, and microservices APIs.",
-      "Adopted Azure Container Apps to streamline deployment of existing services and scale microservices across the cluster, improving deployment flexibility and reliability.",
-      "Led strategic initiatives to modernize legacy APIs by migrating them to cloud-native microservices, significantly enhancing system reliability and reducing operational costs.",
-      "Instrumented systems with Azure Application Insights for sharper diagnostics and more reliable monitoring across services.",
-      "Drove development tool enhancements that improved API performance tuning by 30%, and influenced leadership to adopt AI-driven alert management — reducing alert fatigue and accelerating incident response.",
-      "Led a globally distributed offshore team of 7 (developers, QA, support), owning sprint planning, code reviews, and technical mentorship with quality gates via SAST, DAST, and SonarQube.",
-      "Coordinated cross-functional collaboration between onshore stakeholders and the offshore delivery team, aligning priorities, timelines, and technical decisions across time zones.",
-      "Delivered multiple web portals and partner integrations, advising on performance optimization, cost efficiency, and serverless best practices for cost-effective scale.",
+      "Leading development of a cloud-native Property Search Portal (Angular, .NET 8, Azure SQL Server, bilingual, AODA compliant) enabling the client to launch a new commercial title insurance offering for law firms across Canada, with an estimated 20–30% increase in commercial closing volumes.",
+      "Designed and built a virtual document-signing workflow (Angular / .NET Core) integrating the client's legacy application with a third-party e-signature and verification vendor — eliminating manual signing and cutting deal processing time from 7 days to 3 days, accelerating revenue recognition.",
+      "Modernized legacy .NET WCF services into cloud-native microservices (.NET Core) on Azure Container Apps, streamlining deployment and auto-scaling across clusters; instrumented Azure Application Insights for proactive diagnostics, reducing incident detection and resolution by 60%.",
+      "Leading a distributed offshore team of 7 (developers, QA and support engineers) across sprint planning, code reviews and technical mentorship to ensure consistent delivery quality (DAST, SAST, SonarQube) and adherence to architectural standards.",
+      "Re-engineered Screening Web Form submission through caching and optimized SQL Server stored procedures, reducing processing time from 58 seconds to under 7 seconds.",
     ],
     stack: [
       "Angular",
-      ".NET Core",
+      ".NET 8",
       "Azure Container Apps",
+      "Azure SQL Server",
       "Application Insights",
       "Microservices",
-      "SQL Server",
       "WCF",
     ],
   },
@@ -185,12 +188,10 @@ export const experience: ExperienceItem[] = [
     period: "Jan 2020 — Dec 2022",
     location: "Canada",
     points: [
-      "Identified a broker-onboarding bottleneck in an insurance client's lender portals, designed a dedicated Broker Portal, and presented a working prototype and workflow analysis to stakeholders.",
-      "Acted as lead developer for that Broker Portal — Angular UI with .NET Core microservices — now live and improving broker onboarding efficiency and user experience.",
-      "Single-handedly built and delivered automated file transfer with PGP encryption, integrating it into the existing BizTalk application.",
-      "Managed the full project lifecycle including sprint planning, team leadership, and production deployments.",
-      "Enforced code quality and security through SonarQube and Veracode scans across releases.",
-      "Partnered with Product Owners to define requirements, design solutions, lead development and testing, and support UAT against business objectives.",
+      "Identified a broker-onboarding bottleneck within an insurance client's lender portals, proposed and designed a dedicated Broker Portal, and presented a functional prototype and workflow analysis; acted as lead developer implementing the Angular UI and .NET Core microservices — now live and improving broker onboarding efficiency and user experience.",
+      "Implemented PGP encryption for secure B2B document transfers by configuring BizTalk send ports, custom send pipelines and PGP encoder components, ensuring secure, compliant and reliable file exchange with external partners.",
+      "Managed the full project lifecycle including sprint planning, team leadership and production deployments, enforcing code quality and security through SonarQube and Veracode scans.",
+      "Collaborated with Product Owners to define requirements, design solutions, lead development and testing, and support UAT against business objectives.",
     ],
     stack: [
       "Angular",
@@ -208,10 +209,9 @@ export const experience: ExperienceItem[] = [
     period: "Jul 2014 — Dec 2019",
     location: "India",
     points: [
-      "Led the offshore development team and partnered with client architects to design and document the target architecture.",
-      "Delivered multiple portals using .NET (WCF, WPF, Angular, Entity Framework) and managed SQL Server database objects.",
-      "Built a custom automation tool with ASP.NET MVC and SQL Server stored procedures to eliminate repetitive manual tasks; the client approved and adopted it, increasing team productivity by 30–35%.",
-      "Supported production through issue resolution and patch deployments.",
+      "Led the offshore development team and worked with client architects to design and document the target architecture; delivered multiple portals using .NET (WCF, WPF, Angular, Entity Framework), managed SQL Server objects and supported production through issue resolution and patch deployments.",
+      "Collaborated with the integration team to upgrade BizTalk Server 2010 to BizTalk Server 2016 — resolving .NET Framework and dependency issues, remediating XSLT maps, custom functoids, pipelines and orchestrations, and executing regression testing to ensure reliable message processing and business continuity.",
+      "Identified repetitive manual tasks and developed a custom automation tool using ASP.NET MVC and SQL Server stored procedures; the client approved the tool, resulting in a 30–35% increase in productivity.",
     ],
     stack: [
       ".NET",
@@ -219,6 +219,7 @@ export const experience: ExperienceItem[] = [
       "WPF",
       "Angular",
       "Entity Framework",
+      "BizTalk Server",
       "ASP.NET MVC",
       "SQL Server",
     ],
@@ -237,17 +238,61 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Legacy API Modernization",
-    tagline: "Monolithic APIs → cloud-native microservices",
+    title: "Property Search Portal",
+    tagline: "Cloud-native commercial title insurance platform",
     description:
-      "Led strategic initiatives to migrate legacy enterprise APIs to cloud-native microservices as part of an Azure transformation programme.",
-    technologies: [".NET Core", "Azure", "Microservices", "REST", "WCF"],
+      "Leading development of a bilingual, AODA-compliant Property Search Portal that enabled the client to launch a new commercial title insurance offering for law firms across Canada.",
+    technologies: ["Angular", ".NET 8", "Azure SQL Server", "Azure"],
     architecture:
-      "Microservices exposed over REST, deployed as containers and scaled across an Azure Container Apps cluster.",
+      "Cloud-native Angular front end over .NET 8 services backed by Azure SQL Server, built bilingual and AODA compliant from the ground up.",
     challenges:
-      "Migrating long-lived WCF and legacy service contracts without disrupting dependent enterprise consumers.",
+      "Meeting bilingual and accessibility (AODA) requirements while delivering a new commercial offering at national scale.",
     outcome:
-      "Significantly improved system reliability and reduced operational costs.",
+      "Estimated 20–30% increase in commercial closing volumes for the client.",
+  },
+  {
+    title: "Virtual Document Signing Workflow",
+    tagline: "7 days to 3 days deal processing",
+    description:
+      "Designed and built a virtual document-signing workflow integrating the client's legacy application with a third-party e-signature and identity verification vendor.",
+    technologies: ["Angular", ".NET Core", "REST", "OAuth 2.0"],
+    architecture:
+      "Angular workflow UI and .NET Core integration services bridging a legacy application with an external e-signature and verification vendor.",
+    challenges:
+      "Replacing an entrenched manual signing process while integrating a third-party vendor with a legacy platform.",
+    outcome:
+      "Eliminated manual signing and cut deal processing time from 7 days to 3 days, accelerating revenue recognition.",
+  },
+  {
+    title: "Legacy WCF → Microservices Modernization",
+    tagline: "Azure Container Apps at enterprise scale",
+    description:
+      "Modernized legacy .NET WCF services into cloud-native .NET Core microservices deployed on Azure Container Apps, with full observability through Application Insights.",
+    technologies: [
+      ".NET Core",
+      "Azure Container Apps",
+      "Docker",
+      "Application Insights",
+      "WCF",
+    ],
+    architecture:
+      "Containerized .NET Core microservices auto-scaling across an Azure Container Apps cluster, instrumented with Azure Application Insights.",
+    challenges:
+      "Migrating long-lived WCF service contracts without disrupting dependent enterprise consumers.",
+    outcome:
+      "Streamlined deployment and auto-scaling, with 60% faster incident detection and resolution.",
+  },
+  {
+    title: "Screening Web Form Performance Re-engineering",
+    tagline: "58 seconds to under 7 seconds",
+    description:
+      "Re-engineered the Screening Web Form submission path through caching and targeted SQL Server stored procedure optimization.",
+    technologies: ["SQL Server", "T-SQL", ".NET Core", "Caching"],
+    architecture:
+      "Caching layer in front of optimized SQL Server stored procedures on the submission path.",
+    challenges:
+      "Diagnosing and removing bottlenecks in a production submission workflow without changing business rules.",
+    outcome: "Processing time reduced from 58 seconds to under 7 seconds.",
   },
   {
     title: "Broker Portal",
@@ -263,60 +308,30 @@ export const projects: Project[] = [
       "Delivered and live in production, improving broker onboarding efficiency and user experience.",
   },
   {
-    title: "Enterprise Web Portals & Partner Integrations",
-    tagline: "Plug-in integrations for partner products",
+    title: "Secure B2B Transfers & BizTalk Upgrade",
+    tagline: "PGP encryption and a 2010 → 2016 migration",
     description:
-      "Designed and developed several web portals and integrations that plug seamlessly into partner company products to support broader business offerings.",
-    technologies: [
-      "Angular",
-      ".NET Core",
-      "SQL Server",
-      "Azure Container Apps",
-    ],
+      "Implemented PGP-encrypted B2B document transfer using BizTalk send ports, custom send pipelines and PGP encoder components, and helped upgrade BizTalk Server 2010 to 2016.",
+    technologies: ["BizTalk Server", "PGP", ".NET", "XSLT"],
     architecture:
-      "Containerized services on Azure Container Apps with serverless-friendly patterns and analytics integration.",
+      "Custom BizTalk send pipelines with PGP encoder components, plus remediated XSLT maps, functoids, pipelines and orchestrations on BizTalk 2016.",
     challenges:
-      "Balancing performance, cost efficiency, and scalability across integrations owned by multiple partners.",
+      "Adding strong encryption to a legacy integration platform and resolving .NET Framework and dependency issues during the version upgrade.",
     outcome:
-      "Scalable, cost-effective deployments with greater flexibility and reliability.",
-  },
-  {
-    title: "Automated File Transfer & PGP Encryption",
-    tagline: "Secure automation inside BizTalk",
-    description:
-      "Single-handedly created and delivered an automated, PGP-encrypted file transfer capability integrated with an existing BizTalk application.",
-    technologies: ["BizTalk", "PGP", ".NET", "SQL Server"],
-    architecture:
-      "Scheduled, encrypted transfer pipeline plugged into existing BizTalk orchestrations.",
-    challenges:
-      "Adding strong encryption and automation to a legacy integration platform already running in production.",
-    outcome:
-      "Manual, error-prone file handoffs replaced by a secure automated process.",
-  },
-  {
-    title: "Productivity Automation Tool",
-    tagline: "30–35% team productivity gain",
-    description:
-      "Identified repetitive manual tasks in offshore delivery and built a custom automation tool, then pitched it to the client, who approved and adopted it.",
-    technologies: ["ASP.NET MVC", "SQL Server", "T-SQL"],
-    architecture:
-      "ASP.NET MVC application driving SQL Server stored procedures to automate recurring workflows.",
-    challenges:
-      "Making a bottom-up internal initiative credible enough for client-wide adoption.",
-    outcome: "Increased team productivity by 30–35% after adoption.",
+      "Secure, compliant partner file exchange and a migration completed with reliable message processing and business continuity.",
   },
   {
     title: "In-House Automation Tools & AI Agents",
-    tagline: "AI-assisted operational efficiency",
+    tagline: "30–35% productivity gain",
     description:
-      "Built in-house automation tools and AI agents that eliminated manual tasks across delivery and support workflows.",
-    technologies: ["Angular", ".NET Core", "N8N"],
+      "Built a custom ASP.NET MVC automation tool adopted by the client, and in-house automation tools and AI agents that eliminated manual tasks across delivery and support workflows.",
+    technologies: ["ASP.NET MVC", "SQL Server", "Angular", ".NET Core", "N8N"],
     architecture:
-      "Agent-driven workflow automation orchestrated with N8N and custom .NET Core services behind an Angular console.",
+      "ASP.NET MVC application driving SQL Server stored procedures, plus agent-driven workflow automation orchestrated with N8N behind an Angular console.",
     challenges:
-      "Embedding AI-driven automation into established enterprise processes and gaining stakeholder trust.",
+      "Making bottom-up internal initiatives credible enough for client-wide adoption.",
     outcome:
-      "Reduced operational effort and cost while improving delivery speed and client satisfaction.",
+      "30–35% productivity increase, with reduced operational effort and cost and improved delivery speed and client satisfaction.",
   },
 ];
 
@@ -356,7 +371,7 @@ export const certifications: Certification[] = [
 
 export const achievements = [
   { label: "Years Experience", value: 12, suffix: "+" },
-  { label: "API Performance Tuning Gain", value: 30, suffix: "%" },
+  { label: "Faster Incident Resolution", value: 60, suffix: "%" },
   { label: "Team Productivity Gain", value: 35, suffix: "%" },
   { label: "Engineers Led", value: 7, suffix: "" },
 ];
@@ -381,3 +396,4 @@ export const navSections = [
   { id: "certifications", label: "Certifications" },
   { id: "contact", label: "Contact" },
 ];
+
