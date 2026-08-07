@@ -183,7 +183,7 @@ export function Contact() {
           >
             <span>
               <span className="block font-display text-base font-semibold">
-                Download résumé
+                Download resume
               </span>
               <span className="mt-1 block text-sm text-muted-foreground">
                 PDF · full experience history
