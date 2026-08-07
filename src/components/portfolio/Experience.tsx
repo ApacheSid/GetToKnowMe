@@ -11,7 +11,7 @@ export function Experience() {
           A decade of <span className="gradient-text">delivery</span>
         </>
       }
-      description="Roles listed most recent first. Replace these entries with your resume details in src/content/portfolio.ts."
+      description="Twelve years of enterprise delivery at Infosys, listed most recent first."
     >
       <ol className="relative space-y-8 border-l border-border pl-6 sm:pl-10">
         {experience.map((item, i) => (
