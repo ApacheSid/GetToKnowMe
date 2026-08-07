@@ -15,7 +15,7 @@ import { profile } from "@/content/portfolio";
 
 const title = `${profile.name} — Lead Full Stack .NET & Azure Developer`;
 const description =
-  "Lead software developer with 12+ years in enterprise .NET: Azure cloud transformation, .NET Core microservices, Angular front ends and legacy modernization.";
+  "Lead Full Stack Developer with 12+ years in enterprise .NET: cloud-native microservices on Azure, .NET 8 and Angular platforms, secure APIs and legacy modernization.";
 
 
 export const Route = createFileRoute("/")({
