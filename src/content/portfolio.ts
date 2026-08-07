@@ -12,9 +12,9 @@ import resumeAsset from "@/assets/resume.pdf.asset.json";
 export const profile = {
   name: "Siddhartha Sharma",
   headline:
-    "Team Lead & Lead Software Developer | Full Stack .NET | Azure | Angular | Microservices",
+    "Team Lead & Lead Full Stack Developer | C# / .NET Core | Azure | Angular | Microservices",
   summary:
-    "Lead developer with 12+ years architecting scalable enterprise systems, leading cloud transformations on Azure, and modernizing legacy platforms into cloud-native .NET Core microservices with Angular front ends.",
+    "Lead Full Stack Developer with 12+ years designing enterprise-grade REST APIs, cloud-native microservices and distributed applications with C#, ASP.NET Core, Angular, Azure and SQL Server — modernizing legacy platforms, securing APIs with OAuth2/JWT and shipping through Azure DevOps CI/CD.",
   location: "Canada",
   email: "siddhartha.sharma0501@gmail.com",
   phone: "+1-905-601-2425",
@@ -25,8 +25,8 @@ export const profile = {
 
 /** Typing effect rotation in the hero. */
 export const typingPhrases = [
-  "Lead Software Developer",
-  "Full Stack .NET Developer",
+  "Lead Full Stack Developer",
+  "C# & .NET Core Architect",
   "Azure Cloud & Microservices",
   "Angular & TypeScript Engineer",
   "Legacy Modernization Lead",
@@ -34,18 +34,20 @@ export const typingPhrases = [
 
 export const about = {
   paragraphs: [
-    "I'm a lead developer with 12+ years of experience architecting scalable systems, leading cloud transformations, and delivering end-to-end platform and full-stack solutions. I align technical strategy with business objectives, drive enterprise-wide engineering improvements, and influence senior stakeholders on architectural and technology decisions.",
-    "My strength is designing and optimizing high-performance, scalable platforms that improve developer productivity, enhance system reliability, and reduce operational cost — across Azure, .NET, Angular, CI/CD, and relational databases. I've led cloud cost optimization efforts and owned full-cycle delivery from requirements through production support.",
-    "Alongside hands-on engineering, I lead a globally distributed team of 7 across development, QA, and support — running sprint planning, code reviews, and technical mentorship, and coordinating onshore stakeholders with offshore delivery across time zones.",
+    "I'm a Lead Full Stack Developer with 12+ years of experience designing and developing enterprise-grade REST APIs, cloud-native microservices and distributed applications using C#, ASP.NET Core, Angular/React, Azure and SQL Server. I have extensive experience modernizing legacy applications into scalable microservices, building secure APIs with OAuth2/JWT, integrating BizTalk with APIs, containerizing workloads, and deploying cloud solutions through Azure services and CI/CD pipelines.",
+    "My strength is designing and optimizing high-performance, scalable platforms that improve developer productivity, enhance system reliability and reduce operational cost — with proven success in cloud cost optimization and full-cycle delivery across cloud, backend, frontend and DevOps ecosystems (Azure, .NET, Angular, CI/CD, relational databases).",
+    "Alongside hands-on architecture and engineering, I lead a distributed offshore team of 7 across development, QA and support — owning sprint planning, code reviews, technical mentorship and architectural standards. I'm recognized for strategic thinking and delivering complex, high-impact initiatives that accelerate innovation and business value.",
   ],
   highlights: [
-    "12+ years delivering enterprise software",
-    "Azure cloud transformation & cost optimization",
-    "Legacy API modernization to cloud-native microservices",
+    "12+ years building enterprise .NET and cloud-native platforms",
+    "Cloud-native Property Search Portal driving an estimated 20–30% lift in commercial closing volumes",
+    "Legacy WCF services modernized to microservices on Azure Container Apps",
+    "60% faster incident detection and resolution via Application Insights",
     "Leads a distributed team of 7 (dev, QA, support)",
-    "Domains: Cyber Security, Insurance, Re-Insurance, Title Insurance, Finance",
+    "Domains: Insurance, Re-Insurance, Title Insurance, Banking",
   ],
 };
+
 
 export type SkillGroup = { category: string; skills: string[] };
 
